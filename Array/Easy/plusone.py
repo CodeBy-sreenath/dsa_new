@@ -1,0 +1,10 @@
+class Solution:
+    def plusOne(self,nums):
+        n=len(nums)
+        for i in range(n-1,-1,-1):
+            if nums[i]<9:
+                nums[i]+=1
+                return nums
+            nums[i]=0
+        return [1]+nums
+print(Solution().plusOne([1,2,3]))        
