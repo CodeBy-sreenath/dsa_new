@@ -1,7 +1,7 @@
 class Solution:
-    def longest(self,str):
-        prefix=str[0]
-        for s in str[1:]:
+    def longest(self,strs):
+        prefix=strs[0]
+        for s in strs[1:]:
             while not s.startswith(prefix):
                 prefix=prefix[:-1]
                 if not prefix:
