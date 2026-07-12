@@ -6,6 +6,16 @@ function reverse(s)
         ch=s[i]+ch
 
     }
-    return ch
+    
+
+    if(ch===s)
+    {
+        return"palindrome string"
+    }
+    else
+    {
+        return "not pallindrome"
+    }
 }
+
 console.log(reverse("sreenath"))
