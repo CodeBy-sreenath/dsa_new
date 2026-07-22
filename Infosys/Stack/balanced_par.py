@@ -1,10 +1,11 @@
 exp=input("enter the expression")
 stack=[]
+balanced=True
 pairs={
     ')':'(',
-    '}':'{',']':'['
+    '}':'{',
+    ']':'['
 }
-balanced=True
 for ch in exp:
     if ch in '({[':
         stack.append(ch)
@@ -18,8 +19,9 @@ for ch in exp:
             break
 if len(stack)!=0:
     balanced=False
-            
 if balanced:
     print("balanced")
 else:
-    print("not balanced")        
+    print("not balanced")               
+
+        
