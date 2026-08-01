@@ -6,6 +6,6 @@ def plusone(nums):
         nums[i]=0
     nums.insert(0,1)
     return nums 
-nums=[9,9,9]
+nums=[9,9,9,9]
 print(plusone(nums))   
         
