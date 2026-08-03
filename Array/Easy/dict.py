@@ -5,3 +5,4 @@ details={
 }
 print(details)
 print(details["name"])
+print(details.get('age'))
