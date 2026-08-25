@@ -15,4 +15,5 @@ for item in details.items():
 print(details.pop('name')) 
 print(details)  
 del details["age"]
-print(details)         
+print(details)    
+     
